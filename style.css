@@ -1,0 +1,246 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #360a46, #000000, #030014); /* Gradient background */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #360a46, #000000, #030014); /* Gradient background */
+    padding: 10px 20px;
+}
+
+/* Logo image */
+.navbar img {
+    height: 70px; /* Adjust logo size */
+    margin-left: 50px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Links within the navbar */
+.nav-links a {
+    color: white; /* Text color */
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px; /* Font size */
+    word-spacing: 50px;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Light background on hover */
+    color: purple; /* Change text color on hover */
+}
+
+/* Contact button styling */
+.contact-button {
+    background-color: #7038FA; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px; /* Button font size */
+    cursor: pointer;
+    border-radius: 18px; /* Rounding the corners */
+    margin-right: 40px;
+}
+
+/* Hover effect for the contact button */
+.contact-button:hover {
+    background-color: white; /* Button hover background */
+    color: black; /* Button hover text color */
+    border: 2px solid rgb(59, 21, 59); /* Optional: add border on hover to highlight the button */
+}
+
+/* Container for the typewriter effect */
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Dynamic text styling */
+.dynamic-text {
+    color: #7038FA; /* Color for the dynamic text */
+    display: inline-block; /* Allows for animation */
+}
+.p{
+    color : white;
+}
+/* Typewriter effect */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typing {
+    overflow: hidden; /* Ensures the text is hidden during typing */
+    border-right: 2px solid #7038FA; /* Cursor effect */
+    white-space: nowrap; /* Prevents text wrapping */
+    width: 0; /* Start with no text visible */
+    animation: typewriter 3s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Type and blink */
+}
+
+/* Partners Section */
+.partners {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.partners-heading {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Image Slider */
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px; /* Adds space between images */
+}
+
+/* Slider Item (Individual Image) */
+.slide {
+    min-width: 25%; /* Adjust width of each image */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sliding Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply the animation to the slider */
+.image-slider {
+    animation: slide 12s infinite;
+}
+.container {
+    text-align: center;
+  }
+  
+  .dynamic-text {
+    color: #7038FA; /* Color for the dynamic text */
+    display: inline-block; /* Allows for animation */
+  }
+  
+  /* Typewriter effect */
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .typing {
+    overflow: hidden; /* Ensures the text is hidden during typing */
+    border-right: 2px solid #7038FA; /* Cursor effect */
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+
+
+
+  /* Styling for the footer */
+footer {
+    background: linear-gradient(to right, #360a46, #000000, #030014); /* Gradient background */
+    color: #fff; /* White text */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center-align text in footer */
+}
+
+/* Break line */
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer content section (heading and lists) */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    gap: 20px; /* Add space between the sections */
+}
+
+.footer-section {
+    width: 30%; /* Make each section take up 30% of the container */
+    text-align: left; /* Align text to the left within each section */
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Huge text with purple gradient */
+.huge-text p {
+    font-size: 9rem;
+    font-weight:italic;
+    background: linear-gradient(45deg, #ffffff, #ffffff); /* Purple gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* Footer responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack the sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%; /* Make each section take up full width on small screens */
+        text-align: center; /* Center-align text */
+    }
+}
